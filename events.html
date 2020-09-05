@@ -30,6 +30,7 @@
   
     <link rel="stylesheet" href="css/libraries/owl.carousel.min.css">
     <link rel="stylesheet" href="css/libraries/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/loadingAnimation.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
   
     <link rel="stylesheet" href="css/ionicons.min.css">
@@ -45,7 +46,39 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/community.css">
+  
   </head>
+
+<!-- Loading Animation -->
+<div id="loaderAnim">
+  <div class="boxes">
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<!--End loading Animation-->
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -195,35 +228,34 @@
                       <source src="upcomingVideoFinal.mp4" type="video/mp4">
                       </video>
                     </div>
-                    <div class="content">
-                      <div class="inner">
-                        <header class="major">
-                          <h1 style="text-decoration: underline;">Upcoming Event</h1>
-                        </header>
-                                              <p>There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.</p>
-                                              <ul class="actions">
-                          <li><a class="button" onclick="openForm()" style="color: floralwhite;">Register Here</a></li>
-                        </ul>
-                      </div>
-                                          <div class="form-popup" id="myForm">
-                                          <script type="text/javascript">var submitted=false;</script>
-      
-                                          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-                                           onload="if(submitted) {window.location='https://osdfs.in/ccp.html;'}"></iframe> 
-                                          <form method="post" action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSeJvWasiZDWNz8NJN0CdxnedY_MqhzWSBJU4uA7wo1PcpCQUg/formResponse"target="hidden_iframe" onsubmit="myFunction()"class="form-container">
-                                          <h1 style="text-decoration: underline;">Register</h1>
-                                          <label for="name"><b>Name</b></label>
-                                          <input type="text"  name="entry.1460000172" placeholder="Enter Name"  required>
-                                          <label for="email"><b>Email</b></label>
-                                          <input type="text"  name="entry.1236228512" placeholder="Enter Email"  required>
-                                          <label for="college"><b>College</b></label>
-                                          <input type="text"  name="entry.184290081" placeholder="Enter College" name="college" required>
-                                          <button type="submit" class="btn">Register</button>
-                                          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
-                                         </form>
-                                         </div>
-                    </div>
-									
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h1 style="text-decoration: underline;">Deep Learning Meetup </h1>
+											</header>
+                                            <p>The aim of this meetup is to bring together people interested in the family of machine learning methods that are concerned with learning distributed, hierarchical ("deep") representations.The format will be based around guest speakers sharing new research ideas and applications covering a wide range of fields from computer vision and natural language processing to autonomous systems and prognostics.Entrepreneurs, working professionals, students, academicians, investors, and just about anyone who is interested in Deep Learning is invited.This Meetup will serve to be an open platform for people to share knowledge, practices, research, applications and critiques of deep learning.If interested, Register now. </p>
+                                            <ul class="actions">
+												<li><a class="button" onclick="openForm()" style="color: floralwhite;">Register Here</a></li>
+											</ul>
+										</div>
+                                        <div class="form-popup" id="myForm">
+                                        <script type="text/javascript">var submitted=false;</script>
+    
+                                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+                                         onload="if(submitted) {window.location='https://osdfs.in/ccp.html;'}"></iframe> 
+                                        <form method="post" action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSeJvWasiZDWNz8NJN0CdxnedY_MqhzWSBJU4uA7wo1PcpCQUg/formResponse"target="hidden_iframe" onsubmit="myFunction()"class="form-container">
+                                        <h1 style="text-decoration: underline;">Register</h1>
+                                        <label for="name"><b>Name</b></label>
+                                        <input type="text"  name="entry.1460000172" placeholder="Enter Name"  required>
+                                        <label for="email"><b>Email</b></label>
+                                        <input type="text"  name="entry.1236228512" placeholder="Enter Email"  required>
+                                        <label for="college"><b>College</b></label>
+                                        <input type="text"  name="entry.184290081" placeholder="Enter College" name="college" required>
+                                        <button type="submit" class="btn">Register</button>
+                                        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                                       </form>
+                                       </div>
+									</div>
 								</section>
 </section>
 
@@ -265,7 +297,128 @@
       </div>
       <div class="row">
          
-
+        <div class="col-lg-4 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="speakers-about">
+                    <div class="speaker-img">
+                      <img src="images/speakers/posters/ShreyasSharma.jpg" alt="">
+                    </div>
+                    <div class="speaker-text">
+                      <h3>Shreyas Sharma <span>Machine Learning Research Intern at Samsung Research</span></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="backside" style="height: 100% ;">
+                <div class="card" style="height: 100%;">
+                  <div class="text-center mt-4">
+                    <h4 class="card-title">ALL ABOUT SELF-DRIVING CARS</h4>
+                    <br>
+                    <p class= "card-text">This talk will provide the necessary background for understanding the different tasks and associated challenges with autonomous vehicles, the different sensors and data sources one can use, and the architecture of Autonomous Driving stack. We will take a look at the popular deep learning solutions used while also touching upon the robotics aspect using ROS.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center;">
+            <a class="button" href="https://www.eventbrite.com/e/119494823233" style="margin: 0px 10px 10px 10px ;">Register Here</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="speakers-about">
+                    <div class="speaker-img">
+                      <img src="images/speakers/posters/SergioGarrido.png" alt="">
+                    </div>
+                    <div class="speaker-text">
+                      <h3>Sergio Garrido <span>Machine Learning Research Intern at Amazon</span></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="backside" style="height: 100% ;">
+                <div class="card" style="height: 100% ;">
+                  <div class="text-center mt-4">
+                    <h4 class="card-title">DEEP GENERATIVE MODELS FOR TABULAR DATA</h4>
+                    <br>
+                    <p class= "card-text">We will motivate the generation of tabular data (agents) through deep generative models.
+                      We will review deep generative models and their relation with neural networks and bayesian inference.
+                      I will introduce a way to measure the quality of the generated agents and provide some results of two common deep generative models.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center;">
+            <a class="button" href="https://www.eventbrite.com/e/119504241403" style="margin: 0px 10px 10px 10px ;">Register Here</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="speakers-about">
+                    <div class="speaker-img">
+                      <img src="images/speakers/posters/RuslanMartimov.png" alt="">
+                    </div>
+                    <div class="speaker-text">
+                      <h3>Ruslan Martimov <span>PhD, Senior Machine Learning Engineer at VK.com</span></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="backside" style="height: 100% ;">
+                <div class="card" style="height: 100% ;">
+                  <div class="text-center mt-4">
+                    <h4 class="card-title">AUTOMATIC CONTENT RECOGNITION: DO SOUNDS MATTER?</h4>
+                    <br>
+                    <p class= "card-text">Automatic content recognition (ACR) is an identification technology to recognize content played on a media device or present in a media file" (Wikipedia).
+                    I’m going to propose a framework for automatic audio content recognition that is based on deep learning networks and the Facebook Faiss library. I will go over experimental results for different types of audio content and share lessons that I’ve learned along the way.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center;">
+            <a class="button" href="https://www.eventbrite.com/e/119514139007" style="margin: 0px 10px 10px 10px ;">Register Here</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="speakers-about">
+                    <div class="speaker-img">
+                      <img src="images/speakers/posters/EliyaNachmani.png" alt="">
+                    </div>
+                    <div class="speaker-text">
+                      <h3>Eliya Nachmani<span>PhD, Facebook AI Research</span></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="backside" >
+                <div class="card" style="height: 100%;">
+                  <div class="text-center mt-4">
+                    <h4 class="card-title">SEPARATION OF MIXED AUDIO SEQUENCE</h4>
+                    <p class= "card-text">I'll present a new method for separating a mixed audio sequence, in which multiple voices speak simultaneously. The new method employs gated neural networks that are trained to separate the voices at multiple processing steps, while maintaining the speaker in each output channel fixed. A different model is trained for every number of possible speakers, and the model with the largest number of speakers is employed to select the actual number of speakers in a given sample. Our method greatly outperforms the current state of the art for various scenarios – noisy and reverberant environment. Furthermore, the method achieves state of the art performance for music source separation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center;">
+            <a class="button" href="https://www.eventbrite.com/e/119514941407" style="margin: 0px 10px 10px 10px ;">Register Here</a>
+          </div>
+        </div>
           <div class="col-lg-4 col-md-6">
             <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
               <div class="mainflip">
@@ -273,7 +426,7 @@
                   <div class="card">
                     <div class="speakers-about">
                       <div class="speaker-img">
-                        <img src="images/speakers/Gianluca Detommaso.jpg" alt="">
+                        <img src="images/speakers/posters/GianLuca.png" alt="">
                       </div>
                       <div class="speaker-text">
                         <h3>Gianluca Detommaso<span>Machine Learning Scientist at Amazon</span></h3>
@@ -292,35 +445,11 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-              <div class="mainflip">
-                <div class="frontside">
-                  <div class="card">
-                    <div class="speakers-about">
-                      <div class="speaker-img">
-                        <img src="images/speakers/Eliya Nachmani.jpg" alt="">
-                      </div>
-                      <div class="speaker-text">
-                        <h3>Eliya Nachmani<span>PhD, Facebook AI Research</span></h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="backside" >
-                  <div class="card" style="height: 100%;">
-                    <div class="text-center mt-4">
-                      <h4 class="card-title">SEPARATION OF MIXED AUDIO SEQUENCE</h4>
-                      <p class= "card-text">I'll present a new method for separating a mixed audio sequence, in which multiple voices speak simultaneously. The new method employs gated neural networks that are trained to separate the voices at multiple processing steps, while maintaining the speaker in each output channel fixed. A different model is trained for every number of possible speakers, and the model with the largest number of speakers is employed to select the actual number of speakers in a given sample. Our method greatly outperforms the current state of the art for various scenarios – noisy and reverberant environment. Furthermore, the method achieves state of the art performance for music source separation</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div style="text-align: center;">
+              <a class="button" href="https://www.eventbrite.com/e/119515232277" style="margin: 0px 10px 10px 10px ;">Register Here</a>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6">
             <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
               <div class="mainflip">
@@ -350,95 +479,12 @@
                 </div>
               </div>
             </div>
-          </div>
-      
-          <div class="col-lg-4 col-md-6">
-            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-              <div class="mainflip">
-                <div class="frontside">
-                  <div class="card">
-                    <div class="speakers-about">
-                      <div class="speaker-img">
-                        <img src="images/speakers/Ruslan Martimov.jpg" alt="">
-                      </div>
-                      <div class="speaker-text">
-                        <h3>Ruslan Martimov <span>PhD, Senior Machine Learning Engineer at VK.com</span></h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="backside" style="height: 100% ;">
-                  <div class="card" style="height: 100% ;">
-                    <div class="text-center mt-4">
-                      <h4 class="card-title">AUTOMATIC CONTENT RECOGNITION: DO SOUNDS MATTER?</h4>
-                      <br>
-                      <p class= "card-text">Automatic content recognition (ACR) is an identification technology to recognize content played on a media device or present in a media file" (Wikipedia).
-                      I’m going to propose a framework for automatic audio content recognition that is based on deep learning networks and the Facebook Faiss library. I will go over experimental results for different types of audio content and share lessons that I’ve learned along the way.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div style="text-align: center;">
+              <a class="button" href="#" style="margin: 0px 10px 10px 10px ;">Register Here</a>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-              <div class="mainflip">
-                <div class="frontside">
-                  <div class="card">
-                    <div class="speakers-about">
-                      <div class="speaker-img">
-                        <img src="images/speakers/Sergio Garrido.jpg" alt="">
-                      </div>
-                      <div class="speaker-text">
-                        <h3>Sergio Garrido <span>Machine Learning Research Intern at Amazon</span></h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="backside" style="height: 100% ;">
-                  <div class="card" style="height: 100% ;">
-                    <div class="text-center mt-4">
-                      <h4 class="card-title">DEEP GENERATIVE MODELS FOR TABULAR DATA</h4>
-                      <br>
-                      <p class= "card-text">We will motivate the generation of tabular data (agents) through deep generative models.
-                        We will review deep generative models and their relation with neural networks and bayesian inference.
-                        I will introduce a way to measure the quality of the generated agents and provide some results of two common deep generative models.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-              <div class="mainflip">
-                <div class="frontside">
-                  <div class="card">
-                    <div class="speakers-about">
-                      <div class="speaker-img">
-                        <img src="images/speakers/Shreyas Sharma.jpg" alt="">
-                      </div>
-                      <div class="speaker-text">
-                        <h3>Shreyas Sharma <span>Machine Learning Research Intern at Samsung Research</span></h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="backside" style="height: 100% ;">
-                  <div class="card" style="height: 100%;">
-                    <div class="text-center mt-4">
-                      <h4 class="card-title">ALL ABOUT SELF-DRIVING CARS</h4>
-                      <br>
-                      <p class= "card-text">This talk will provide the necessary background for understanding the different tasks and associated challenges with autonomous vehicles, the different sensors and data sources one can use, and the architecture of Autonomous Driving stack. We will take a look at the popular deep learning solutions used while also touching upon the robotics aspect using ROS.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          </div>
+      </div>
+    </div>
 </section>
 <!-- Speaker Section End -->
 
@@ -544,6 +590,7 @@ function closeForm() {
   <script src="js/scripts/aos.js"></script>
   <script src="js/scripts/jquery.animateNumber.min.js"></script>
   <script src="js/scripts/scrollax.min.js"></script>
+  <script src="js/removingLoader.js"></script>
   <!-- <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/scripts/google-map.js"></script> -->
